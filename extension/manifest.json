@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Drift",
+  "version": "1.0",
+  "description": "Drift Recommendation Agent for YouTube Shorts",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/shorts/*"],
+      "js": [
+        "data.js",
+        "taxonomy.js",
+        "recommender.js",
+        "agent.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["*://www.youtube.com/*"]
+    }
+  ]
+}

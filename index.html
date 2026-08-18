@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drift – AI‑powered career content feed</title>
+    <!-- Google Fonts (display + body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section reveal">
+        <div class="hero-content">
+            <h1 class="hero-title">Drift</h1>
+            <p class="hero-tagline">Don't stop scrolling. Make your scrolling count.</p>
+            <p class="hero-subtext">
+                An AI agent that learns what you actually care about while you scroll, and quietly upgrades your feed with content worth your time.
+            </p>
+            <button class="hero-cta" id="scroll-demo-btn">Try the Live Demo ⬇︎</button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works-section reveal">
+        <h2 class="section-heading">How it works</h2>
+        <div class="steps-container">
+            <div class="step-card">
+                <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/></svg>
+                <h3 class="step-title">You scroll</h3>
+                <p class="step-text">Swipe through short‑form Reels – like any feed.</p>
+            </div>
+            <div class="step-card">
+                <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                <h3 class="step-title">We notice patterns</h3>
+                <p class="step-text">The agent watches your likes, saves, skips and replays.</p>
+            </div>
+            <div class="step-card">
+                <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                <h3 class="step-title">We infer your real interest</h3>
+                <p class="step-text">Multi‑signal taxonomy builds a broader interest cluster.</p>
+            </div>
+            <div class="step-card">
+                <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 12h14"/></svg>
+                <h3 class="step-title">We recommend something worth your time</h3>
+                <p class="step-text">A high‑value tech Reel replaces the noise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE DEMO SECTION -->
+    <section class="live-demo-section reveal" id="live-demo">
+        <h2 class="section-heading">Try it yourself</h2>
+        <p class="demo-subtext">Scroll, like, and save a few Reels — watch the agent figure out what you're into.</p>
+        <div class="demo-container">
+            <div class="phone-frame">
+                <div class="app-container">
+                    <div class="app-header">
+                        <div class="logo">Drift</div>
+                        <div class="tagline">Don't stop scrolling. Make your scrolling count.</div>
+                    </div>
+                    <div class="feed-container" id="feed"></div>
+                    <button class="agent-btn" id="agent-btn">
+                        <div class="agent-icon"></div>
+                        <div class="agent-badge hidden" id="agent-badge"></div>
+                    </button>
+                    <button class="analyze-btn" id="analyze-btn">Analyze My Scroll</button>
+                    <div class="bottom-sheet" id="bottom-sheet">
+                        <div class="bottom-sheet-content">
+                            <div class="drag-handle"></div>
+                            <div class="sheet-header">
+                                <h2>Insights</h2>
+                                <button class="close-btn" id="close-sheet">✕</button>
+                            </div>
+                            <div class="sheet-body" id="sheet-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY IT'S DIFFERENT SECTION -->
+    <section class="diff-section reveal">
+        <h2 class="section-heading">Why it’s different</h2>
+        <div class="diff-cards">
+            <div class="diff-card">
+                <svg class="diff-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/></svg>
+                <p class="diff-text">Multi‑signal inference – we look at likes, saves, skips and replays, not just a keyword.</p>
+            </div>
+            <div class="diff-card">
+                <svg class="diff-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                <p class="diff-text">Hype filtering – flashy titles are ignored unless they have real educational value.</p>
+            </div>
+            <div class="diff-card">
+                <svg class="diff-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                <p class="diff-text">Evidence‑based recommendation – you can expand the “Why did you choose this?” view.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXTENSION SHOWCASE SECTION -->
+    <section class="extension-section reveal">
+        <h2 class="section-heading">Drift, Everywhere You Scroll</h2>
+        <p class="demo-subtext">
+            Drift isn't just a demo — it's a real Chrome extension that lives inside YouTube Shorts.<br>
+            No new app to open. No feed to switch to. It works while you scroll, exactly where you already are.
+        </p>
+
+        <div class="ext-layout">
+            <!-- Left: visual mockup -->
+            <div class="ext-mockup-wrapper">
+                <div class="ext-browser-bar">
+                    <span class="ext-dot r"></span>
+                    <span class="ext-dot y"></span>
+                    <span class="ext-dot g"></span>
+                    <span class="ext-url">youtube.com/shorts/...</span>
+                    <span class="ext-icon-badge">D</span>
+                </div>
+                <div class="ext-phone-body">
+                    <!-- Fake Shorts frame -->
+                    <div class="ext-shorts-bg">
+                        <div class="ext-shorts-gradient"></div>
+                        <div class="ext-shorts-meta">
+                            <div class="ext-shorts-tag">🎮 Gaming</div>
+                            <div class="ext-shorts-title">Top 5 Valorant Clutch Plays</div>
+                            <div class="ext-shorts-caption">VCT 2026 highlights...</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Drift icon overlay -->
+                    <div class="ext-drift-btn">
+                        <div class="ext-drift-ring"></div>
+                        <span class="ext-drift-label">D</span>
+                        <div class="ext-drift-badge">!</div>
+                    </div>
+
+                    <!-- Mini bottom sheet peek -->
+                    <div class="ext-sheet-peek">
+                        <div class="ext-sheet-handle"></div>
+                        <div class="ext-sheet-row">
+                            <span class="ext-sheet-label">INTEREST DETECTED</span>
+                            <span class="ext-sheet-val">Gaming &amp; Esports</span>
+                        </div>
+                        <div class="ext-sheet-row">
+                            <span class="ext-sheet-label">CONFIDENCE</span>
+                            <span class="ext-sheet-val ext-high">High</span>
+                        </div>
+                        <div class="ext-sheet-rec">🎯 How Game Engines Render in Real-Time →</div>
+                        <div class="ext-chips">
+                            <span class="ext-chip">#gaming</span>
+                            <span class="ext-chip">#esports</span>
+                            <span class="ext-chip">#valorant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: steps -->
+            <div class="ext-steps">
+                <div class="ext-step">
+                    <div class="ext-step-num">1</div>
+                    <div class="ext-step-text">
+                        <strong>Install the extension</strong>
+                        <span>Load unpacked from <code>chrome://extensions</code> in Developer Mode</span>
+                    </div>
+                </div>
+                <div class="ext-step">
+                    <div class="ext-step-num">2</div>
+                    <div class="ext-step-text">
+                        <strong>Scroll YouTube Shorts normally</strong>
+                        <span>Drift runs silently in the background — no extra steps</span>
+                    </div>
+                </div>
+                <div class="ext-step">
+                    <div class="ext-step-num">3</div>
+                    <div class="ext-step-text">
+                        <strong>Drift quietly learns your interests</strong>
+                        <span>Multi-signal inference across skips, watch time &amp; replays</span>
+                    </div>
+                </div>
+                <div class="ext-step">
+                    <div class="ext-step-num">4</div>
+                    <div class="ext-step-text">
+                        <strong>Get notified when it finds something worth your time</strong>
+                        <span>A clickable recommendation surfaces directly inside YouTube</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Built for Hackathon 2026 · Drift</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/taxonomy.js"></script>
+    <script src="js/recommender.js"></script>
+    <script src="js/agent.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
