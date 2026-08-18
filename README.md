@@ -2,16 +2,33 @@
 
 Drift is a Chrome Extension that silently watches your scrolling behavior on YouTube Shorts, infers your real underlying interests using multi-signal taxonomy, and quietly upgrades your feed with educational content worth your time.
 
-## 📸 How it Works
+## 📸 See it in Action
 
-*(Upload your screenshots here)*
+### 1. The Glassmorphic UI
+*(Upload image 1 here)*
+![Image 1 placeholder]()
 
-![Screenshot 1 - Detecting patterns](link_to_your_image_here)
-![Screenshot 2 - The 3-card recommendation UI](link_to_your_image_here)
+### 2. Auto-Detecting Your Interest
+*(Upload image 2 here)*
+![Image 2 placeholder]()
 
-## 📥 How to Download and Install
+### 3. The Top-3 Recommendation Cards
+*(Upload image 3 here)*
+![Image 3 placeholder]()
 
-Since this extension is not yet published on the Chrome Web Store, you can install it directly from this repository using Developer Mode:
+### 4. Viewing the Evidence (Why this was recommended)
+*(Upload image 4 here)*
+![Image 4 placeholder]()
+
+### 5. Website Showcase
+*(Upload image 5 here)*
+![Image 5 placeholder]()
+
+---
+
+## 📥 How to Download and Install the Extension
+
+You can install this extension directly from this repository using Developer Mode:
 
 1. **Download the Code**
    - Click the green **Code** button at the top of this repository and select **Download ZIP**.
