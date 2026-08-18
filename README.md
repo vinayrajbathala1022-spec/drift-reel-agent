@@ -1,3 +1,4 @@
+<img width="1920" height="1080" alt="Screenshot 2026-08-18 142913" src="https://github.com/user-attachments/assets/f9a7b45f-b12e-4c6b-9d45-a639c8dbd348" />
 # Drift — AI-Powered YouTube Shorts Feed Upgrader
 
 Drift is a Chrome Extension that silently watches your scrolling behavior on YouTube Shorts, infers your real underlying interests using multi-signal taxonomy, and quietly upgrades your feed with educational content worth your time.
