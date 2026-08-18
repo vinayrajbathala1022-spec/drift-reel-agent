@@ -1,26 +1,37 @@
-# Drift
+# Drift — AI-Powered YouTube Shorts Feed Upgrader
 
-**"Don't stop scrolling. Make your scrolling count."**
+Drift is a Chrome Extension that silently watches your scrolling behavior on YouTube Shorts, infers your real underlying interests using multi-signal taxonomy, and quietly upgrades your feed with educational content worth your time.
 
-Drift is an AI-powered career-content recommendation agent for students, built as an interactive prototype using plain HTML, CSS, and Vanilla JavaScript. 
+## 📸 How it Works
 
-## Problem
-Students spend significant time consuming short-form content. Drift aims to make this time more productive by subtly detecting their underlying technical/career interests and recommending high-value educational content inside the feed experience.
+*(Upload your screenshots here)*
 
-## Architecture
-- `data.js`: Seed data containing the trap-case reels and candidate recommendations.
-- `taxonomy.js`: The core intelligence. It extracts all 5 interaction signals (watch%, like, save, replay, skip), maps tags to semantic clusters, and infers a broader interest using weighted scores and diversity metrics to calculate confidence.
-- `recommender.js`: Takes the inferred interest, filters out "Hype" content, penalizes repetitive surface topics, and selects the most novel and educational candidate.
-- `agent.js`: Orchestrates the flow between UI events, taxonomy, and recommender.
-- `ui.js`: Handles scroll tracking (IntersectionObserver), bottom-sheet rendering, and animations.
+![Screenshot 1 - Detecting patterns](link_to_your_image_here)
+![Screenshot 2 - The 3-card recommendation UI](link_to_your_image_here)
 
-## The Trap Case
-The prototype demonstrates the "Trap Case". If a user watches a Java meme, a Software Engineering vlog, a coding interview joke, and a developer laptop review, a simple system would just categorize them as "Java" or "Funny". Drift's multi-signal taxonomy maps all these distinct tags to a broader `"Software Engineering / Technology Career"` cluster, preventing localized loops and enabling deeper recommendations.
+## 📥 How to Download and Install
 
-## Running the Project
-No build step is required. Simply open `index.html` in any modern web browser.
+Since this extension is not yet published on the Chrome Web Store, you can install it directly from this repository using Developer Mode:
 
-1. Open `index.html`.
-2. Scroll through the feed. Like, save, or skip reels.
-3. Watch the floating agent button react as it gathers signals.
-4. Click the agent or "Analyze My Scroll" to see the structured inference and recommendation report.
+1. **Download the Code**
+   - Click the green **Code** button at the top of this repository and select **Download ZIP**.
+   - Extract the downloaded ZIP file to a folder on your computer.
+
+2. **Load into Chrome**
+   - Open Google Chrome and go to chrome://extensions/ in your address bar.
+   - In the top right corner, turn on **Developer mode**.
+   - Click the **Load unpacked** button that appears in the top left.
+   - Select the extension folder that you extracted from the ZIP.
+
+3. **Start Scrolling!**
+   - Go to [YouTube Shorts](https://www.youtube.com/shorts/).
+   - Start scrolling! You will see the Drift agent icon in the bottom right corner automatically learning from your swipes, watch time, and skips.
+
+## Features
+- **Multi-signal Inference**: Looks at watch time, skips, and replays instead of just a keyword.
+- **Hype Filtering**: Ignores flashy titles unless they have real educational value.
+- **Top 3 Recommendations**: Surfaces 3 varied, high-quality Reels in a custom glassmorphic bottom-sheet UI.
+- **Runs Locally**: All inference happens instantly right inside your browser.
+
+---
+*Built for Hackathon 2026*
